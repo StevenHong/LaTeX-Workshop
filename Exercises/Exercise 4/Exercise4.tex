@@ -1,0 +1,34 @@
+\documentclass[]{article}
+\usepackage{color}
+\usepackage{hologo}
+\usepackage{enumitem}
+\newcommand{\BlueText}[1]{\textcolor{blue}{#1}}
+
+
+\begin{document}
+\noindent \BlueText{\textbf{Exercise 4:} Attempt to replicate the following in black text by following these steps.} \vspace*{0.5cm}
+
+\BlueText{
+\begin{enumerate}[label=\textbf{Step \arabic*:}]
+	\item Create a \hologo{BibTeX} file that includes 4 random citations.
+	You can pull the citations from Google Scholar.
+	\item Replicate the following sentence randomly citing 3 of these 4 references.
+	\item Make sure to include your bibliography at the end using \texttt{ieetr} bibliography style.
+	\item Once everything has been replicated try including the \texttt{cite} package in your preamble.
+	What changed when you included this package?
+	\item Now try changing the bibliography style to \texttt{apalike}.
+	What changed?
+\end{enumerate}
+}
+
+\vspace{1cm}
+
+%%%%%%%%%%%%%%%%
+%%%% TO DO: Add the text to see reference list
+
+
+
+\noindent \BlueText{\textbf{\underline{NOTE:}} Since the third reference is a book, the reference like has a different style than the two articles above.\\\\
+Also notice that the 4th entry of the \texttt{.bib} file doesn't show up in the reference section since only referenced entries will be included in the References section.}
+
+\end{document}

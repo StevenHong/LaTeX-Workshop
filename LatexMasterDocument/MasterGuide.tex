@@ -31,7 +31,7 @@
 \usepackage{embedfile} 					%Allows embedding of files into the pdf document
 \embedfile{MasterGuide.tex} 			%Embed the .tex file into the pdf
 \embedfile{MyBib.bib}					%Embed the .bib file into the pdf
-\embedfile{../Figs/cat.jpg}				%Embed the .jpg file into the pdf
+\embedfile{./Figs/cat.jpg}				%Embed the .jpg file into the pdf
 
 %This is the standard setup for creating new commands
 %The following commands are two that have been regularly throughout this document
@@ -61,7 +61,7 @@
 \pretitle{
 	\begin{center}
 		\LARGE
-		\includegraphics[width=0.5\textwidth]{../Figs/MEGC_logo.png}\\[\bigskipamount]
+		\includegraphics[width=0.5\textwidth]{./Figs/MEGC_logo.png}\\[\bigskipamount]
 	}
 	\posttitle{\end{center}}
 
@@ -75,9 +75,9 @@
 	%The commands below define and make the titlepage
 	\title{Learning \LaTeX\ with MEGC}
 	\author{\vspace{1 in} \\University of Michigan 
-		\\Ann Arbor, Michigan \vspace{.25 in} 
+		\\Ann Arbor, Michigan \vspace{.25 in} \\by: \\Jeff Koller \vspace{1 in}
 	} 
-	\date{January 23\textsuperscript{rd}, 2020}
+	\date{October 1\textsuperscript{rd}, 2015}
 	\maketitle				%Create title
 	\thispagestyle{empty} 	%Remove header and footer.
 	\clearpage				%Equivalent to a page break
@@ -515,7 +515,7 @@
 	
 	\begin{figure}[h]
 		\begin{center}
-			\includegraphics[width=0.5\textwidth]{../Figs/cat}
+			\includegraphics[width=0.5\textwidth]{./Figs/cat}
 			\caption{Picture of an awesome cat.}
 			\label{fig:awesomecat}
 		\end{center}

@@ -1,25 +1,25 @@
 \documentclass[]{article}
 \usepackage{enumitem}
 \usepackage{color}
-\newcommand{\Jeff}[1]{\textcolor{blue}{#1}}
+\newcommand{\BlueText}[1]{\textcolor{blue}{#1}}
 
 
 \begin{document}
-\noindent \Jeff{\textbf{Exercise 1:} Attempt to replicate the black text and fill in your own information for the lists.
+\noindent \BlueText{\textbf{Exercise 1:} Attempt to replicate the black text and fill in your own information for the lists.
 (\textbf{\underline{HINT:}} You may want to use the package \texttt{enumitem} for the third list.}
-%\vspace{1cm}
+%\vspace{1cm} % no need to add extra space here
 
 \section{Summer}
 \label{sec:summer}
-\Jeff{$\uparrow$ this is a section header}
+\BlueText{$\uparrow$ this is a section header}
 
 \noindent The following is a list of things I did this summer
 \begin{enumerate}
 	\item Traveled to California
 	\item Bought a new puppy
-	\item Learned \LaTeX\
 	%%%%%%%%%%%%%%%%
-	%%%% TO DO: Add your own activities
+	%%%% DONE: Add your own activities
+	\item Learned \LaTeX\
 \end{enumerate}
 
 \section{Fall}
@@ -29,16 +29,21 @@ The following is a list of things I will do this fall starting with number 24
 	\setcounter{enumi}{23}
 	\item Eat lots of pumpkin pie
 	\item Bike to see all of the colorful trees
-%%%%%%%%%%%%%%%%
-%%%% TO DO: Add item with references
-
+	%%%%%%%%%%%%%%%%
+	%%%% DONE: Add item with references
+	\item Enjoy the brisk cool air before winter hits, then I will do things listed in Section \ref{sec:winter} \BlueText{$\leftarrow$ try to use a reference for the numbering}
 \end{enumerate}
 
 \section{Winter}
 \label{sec:winter}
 The following is a list of things I will do this winter
 %%%%%%%%%%%%%%%%
-%%%% TO DO: Add a list of activities 
+%%%% DONE: Add a list of activities
+\begin{enumerate}[label=(\roman*)]
+	\item Ski
+	\item Do tons of science
+	\item Drink lots of hot chocolate
+\end{enumerate}
 
 \section{Formatting}
 \label{sec:formatting}
@@ -47,6 +52,7 @@ The following is a list of my favorite formatting combinations
 	\item[$\circ$] \underline{\textit{favorite}}
 	\item[$\circ$] \textbf{\textit{favorite}}
 %%%%%%%%%%%%%%%%
-%%%% TO DO: Replicate last entry in the solution pdf
+%%%% DONE: Replicate last entry in the solution pdf
+	\item[$\circ$] \textbf{fav}\textit{or}\underline{ite}
 \end{itemize}
 \end{document}

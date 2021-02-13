@@ -1,0 +1,47 @@
+\documentclass[]{article}
+\usepackage{amsmath}
+\usepackage{color}
+\newcommand{\BlueText}[1]{\textcolor{blue}{#1}}
+
+\begin{document}
+\noindent \BlueText{\textbf{Exercise 2:} Attempt to replicate the following in black text.
+(\textbf{\underline{HINT:}} You will need the \texttt{amsmath} package and you may need to use the command \texttt{\textbackslash noindent} for formatting.)}
+\vspace{1cm}
+
+\noindent The first equation is as follows:
+\begin{align}
+\begin{split}
+	y &= 2x^3 + 4x^2 + x + 2 \\
+%%%%%%%%%%%%%%%%
+%%%% DONE: Add the missing equations
+	&= 2x^2 (x+2) + (x+2) \\
+	&= (2x^2+1) (x+2)
+\end{split}
+\end{align}
+
+
+\noindent The second equation is as follows:
+\begin{align}
+%%%%%%%%%%%%%%%%
+%%%% DONE: Add the missing equations
+	w_i &= \frac{e^{\left( -0.5\Delta_i \right) }}
+	 {\left( \sum\limits_{r=1}^R e^{ \left( -0.5\Delta_i \right)} \right) }
+\end{align}
+
+\noindent The third equation is as follows:
+\begin{align}
+%%%%%%%%%%%%%%%%
+%%%% DONE: Add the missing equations
+\label{eq:matrix}
+	\boldsymbol{\sigma} = 
+	\left[ \begin{matrix}
+		\sigma_x & \tau_{xy} & \tau_{xz} \\
+		\tau_{yx} & \sigma_y & \tau_{yz} \\
+		\tau_{zx} & \tau_{zy} & \sigma_z
+	\end{matrix} \right]
+\end{align}
+
+\noindent Equation \eqref{eq:matrix} is my favorite of the three.
+\BlueText{$\leftarrow$ use an equation reference command here to get the parenthesis (ie \texttt{\textbackslash eqref\{\}})}
+
+\end{document}

@@ -6,14 +6,15 @@
 
 
 \begin{document}
-\noindent \BlueText{\textbf{Exercise 4:} Attempt to replicate the following in black text by following these steps.} \vspace*{0.5cm}
+\noindent \BlueText{\textbf{Exercise 5:} Attempt to replicate the following in black text by following these steps.} 
+\vspace*{0.5cm}
 
 \BlueText{
 \begin{enumerate}[label=\textbf{Step \arabic*:}]
 	\item Create a \hologo{BibTeX} file that includes 4 random citations.
 	You can pull the citations from Google Scholar.
 	\item Replicate the following sentence randomly citing 3 of these 4 references.
-	\item Make sure to include your bibliography at the end using \texttt{ieetr} bibliography style.
+	\item Make sure to include your bibliography at the end using \texttt{ieeetr} bibliography style.
 	\item Once everything has been replicated try including the \texttt{cite} package in your preamble.
 	What changed when you included this package?
 	\item Now try changing the bibliography style to \texttt{apalike}.
@@ -21,12 +22,17 @@
 \end{enumerate}
 }
 
+%%%%%%%%%%%%%%%%
+%%%% DONE: Add the text to see reference list
+From \cite{phillips2006invasion}, I found out that an alternative understanding of concept of XYZ \cite{davies1978deep} was proposed in the book \cite{mattison1987frogs}.
+From attending the MEGC \LaTeX\ workshop, I now feel comfortable using \hologo{BibTeX}.
+I even eel comfortable enough trying something new that has not been taught.
+For example I can now cite multiple citations at once \cite{phillips2006invasion, davies1978deep, mattison1987frogs}.
+
 \vspace{1cm}
 
-%%%%%%%%%%%%%%%%
-%%%% TO DO: Add the text to see reference list
-
-
+\bibliographystyle{ieeetr}
+\bibliography{Exercise5Bib}
 
 \noindent \BlueText{\textbf{\underline{NOTE:}} Since the third reference is a book, the reference like has a different style than the two articles above.\\\\
 Also notice that the 4th entry of the \texttt{.bib} file doesn't show up in the reference section since only referenced entries will be included in the References section.}
